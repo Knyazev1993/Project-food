@@ -28,7 +28,8 @@ a {
 }
 
 .btn_white {
-    background-color: #fff
+    background-color: #fff;
+
 }
 
 .btn_dark {
@@ -47,7 +48,26 @@ a {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: none;
+    }
 }
 
 .divider {
@@ -71,10 +91,15 @@ a {
     background-color: #000000;
 }
 
+.container_1 .header__left-block {
+    margin-left: auto;
+}
+
 .header__left-block {
     display: flex;
     justify-content: space-between;
-    min-width: 550px
+    min-width: 550px;
+
 }
 
 .header__logo {
