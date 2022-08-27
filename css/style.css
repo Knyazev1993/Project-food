@@ -46,6 +46,8 @@ a {
     box-shadow: 0 4px 30px rgba(0, 0, 0, .3)
 }
 
+/*Адаптив*/
+
 .container {
     max-width: 1200px;
     margin: 0px auto;
@@ -108,19 +110,20 @@ a {
 }
 
 .header__logo img {
-    width: 100%
+    width: 100%;
 }
 
 .header__links {
     display: flex;
-    align-items: center
+    align-items: center;
+    padding-left: 100px;
 }
 
 .header__link {
     position: relative;
     margin-right: 45px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
     color: #ffffff
 }
 
@@ -178,11 +181,41 @@ a {
     width: 100%
 }
 
+
+/*Адаптив container1*/
+
+
+
+.container1 {
+    margin: 0px auto;
+    padding: 0px 5px;
+}
+
+@media (max-width:1200px) {
+    .container1 {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .container1 {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    .container1 {
+        max-width: none;
+    }
+}
+
 .preview {
-    padding: 28px 0 100px 0;
+    padding: 40px 0 100px 0px;
     position: relative;
     background-color: #212121;
+
 }
+
 
 .preview__life {
     font-weight: 700;
@@ -192,7 +225,7 @@ a {
     color: #fff;
 }
 
-.bgc_blue {
+/*.bgc_blue {
     position: absolute;
     right: 0;
     top: -155px;
@@ -201,7 +234,7 @@ a {
     background: #3d3d3d;
     z-index: -1
 }
-
+*/
 .tabcontainer {
     display: flex;
     width: 1130px;
@@ -211,6 +244,7 @@ a {
 
 .tabcontent {
     width: 850px;
+    height: 550px;
     position: relative
 }
 
